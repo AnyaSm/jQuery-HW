@@ -1,0 +1,150 @@
+@import url(https://fonts.googleapis.com/css?family=Karla:400,700)
+@import url(https://fonts.googleapis.com/css?family=Raleway:500,700,800)
+@import url(https://fonts.googleapis.com/css?family=Open+Sans)
+@import url(https://fonts.googleapis.com/css?family=Lora:400italic)
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab)
+@import compass
+@import compass/css3/user-interface
+@import variables
+@import compass/css3
+@import compass/layout
+@import compass/typography
+@import compass/utilities
+
+/*-----------RESET STYLES-------------*/
+*
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
+a,p
+  text-decoration: none
+
+a, button, i, input
+  -webkit-transition: 0.2s ease-out
+  -moz-transition: 0.2s ease-out
+  -o-transition: 0.2s ease-out
+  transition: 0.2s ease-out
+
+ul
+  list-style: none
+
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,input,textarea
+  padding: 0
+  margin: 0
+  line-height: 1em
+/*--------END RESET STYLES------------*/
+
+/*---------RESET BOOTSTRAP STYLES-----*/
+.navbar>.container .navbar-brand,
+.navbar>.container-fluid .navbar-brand
+  margin: 0
+/*-----END RESET BOOTSTRAP STYLES-----*/
+
+/*------------HEADER STYLES-----------*/
+.welcome
+  height: 100vh
+  background: url("../../images/welcome-2.jpg") no-repeat
+  background-size: cover
+  .header
+    padding: 30px 0
+    background: rgba($black-color, 0.45)
+
+.menu
+  li
+    a
+      font: 700 18px 'Karla', sans-serif
+      color: $white-color
+      text-decoration: none
+    .dropdown-main, .about-button
+      font-size: 20px
+      text-transform: uppercase
+      &:hover
+        color: rgba($white-color, 0.9)
+        text-shadow: 5px 5px 5px $black-color
+    .main-list, .about-list
+      display: none
+      .hvr-underline-from-center:before
+        height: 1px
+        background: rgba($white-color, 0.4)
+  .modal-button
+    .fa
+      font-size: 18px
+      color: $white-color
+
+.jumbotron
+  margin-bottom: 0
+  padding-top: 120px
+  background: transparent
+  h2
+    margin-bottom: 30px
+    font: 700 48px 'Karla', sans-serif
+    text-transform: uppercase
+    color: $white-color
+  p
+    max-width: 750px
+    margin: 0 auto
+    padding-bottom: 50px
+    font: 700 16px 'Karla', sans-serif
+    text-shadow: 5px 5px 5px $black-color
+    color: $white-color
+  .button
+    text-align: center
+    .btn-lg
+      padding: 10px 40px
+      font-size: 15px
+      border-radius: 50px
+      text-transform: uppercase
+      background: rgba($black-color, 0.45)
+      border: none
+      &:hover
+        background: rgba($white-color, 0.2)
+        color: $black-color
+
+.contact-us
+  display: none
+  position: fixed
+  top: 50%
+  left: 50%
+  width: 100%
+  max-width: 700px
+  margin-top: -125px
+  margin-left: -350px
+  background: $grey-color
+  padding: 70px 0
+  background: $white-color
+  border-radius: 20px
+  z-index: 1
+  h3
+    margin-bottom: 35px
+    font: 700 35px 'Karla', sans-serif
+    text-transform: uppercase
+    color: $black-color
+  .close
+    position: absolute
+    top: 30px
+    right: 20px
+  .form-group
+    .input-group
+      max-width: 500px
+    .input-group-addon
+      &:hover
+        background: rgba($black-color, 0.2)
+      a
+        text-transform: uppercase
+        color: $black-color
+        text-decoration: none
+
+.overlay
+  display: none
+  position: fixed
+  top: 0
+  width: 100%
+  height: 100%
+  background: rgba($black-color, 0.6)
+
+
+@import media1200
+@import media992
+@import media768
+@import media320
